@@ -11,15 +11,6 @@
 #' @export
 
 
-library(glue)
-library(ggplot2)
-library(dplyr)
-library(haven)
-
-
-
-
-#  detect duplicates
 Hkangduplicates <- function(df, variable_list) {
   df_flagged <- df %>%
     dplyr::group_by(dplyr::across(dplyr::all_of(variable_list))) %>%
