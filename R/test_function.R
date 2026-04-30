@@ -15,6 +15,7 @@
 #'
 #' @export
 #' @importFrom dplyr group_by across all_of mutate n ungroup filter distinct
+#' @importFrom magrittr %>%
 
 
 Hkangduplicates <- function(df, variable_list) {
