@@ -1,14 +1,20 @@
-#' Check for Percent Missing
+#' Check for Duplicates
 #'
 #' @description
-#' Assess the duplicates count and list id & visitdate in the analysis dataset.
+#' Identify duplicate records in a dataset based on a set of variables.
 #'
+#' @param df The analysis dataset being assessed
+#' @param variable_list Character vector of variables used to assess duplicates
 #'
-#' @param df the analysis dataset being assessed
-#'
-#' @returns A list of duplicates
+#' @returns A list containing:
+#' \itemize{
+#'   \item data_with_flag: Original dataset with duplicate flags
+#'   \item duplicate_rows: Rows identified as duplicates
+#'   \item duplicate_summary: Unique duplicate combinations with counts
+#' }
 #'
 #' @export
+#' @importFrom dplyr group_by across all_of mutate n ungroup filter distinct
 
 
 Hkangduplicates <- function(df, variable_list) {
