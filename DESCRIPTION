@@ -1,13 +1,11 @@
 Package: Hkangduplicates
-Title: Tools for Identifying Duplicate Records in Datasets
+Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("Hyung-Joo", "Kang", email="hkang@corevitas.com", role = c("aut", "cre"))
-Description: Provides functions to identify and summarize duplicate records 
-    in analysis datasets based on specified variables.
-License: MIT + file LICENSE
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-Imports:
-    dplyr, magrittr
